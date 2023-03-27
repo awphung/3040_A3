@@ -1,2 +1,10 @@
-### Api Description Doc
+## API Description Document
+### API Description:
 The API includes data such as the location, size, intensity, and direction of the fire within Manitoba. This data can be used by emergency services, researchers, and the general public to monitor and respond to wildfires in the area. People can use this API to report the size and location of wildfires as well.
+
+### Endpoints and Parameters:
+- /burningchance/{location}
+
+- /isonfire/{location}/{time}
+
+###

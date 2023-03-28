@@ -1,12 +1,15 @@
 ## API Description Document
 ### API Description: The Manitoba Fire-Watch API
-The Manitoba Fire-Watch API is a new API that helps the citizens of Manitoba stay informed of fire risks and status across a variety of forested locations. The API delivers data such as the location, chance of a fire, the zone the location belongs to, current status of the fire, and the last recorded fire at the given location within Manitoba. This data can also be utilized by National Park Rangers to update their own data and information regarding the fires across our National Parks here in Manitoba, or even emergency services looking to get a quick status update.  
+The Manitoba Fire-Watch Application Programming Interface (API) is a new API that helps the citizens of Manitoba stay informed of fire risks and status across a variety of locations. An API is a set of tools that delivers data based on the requests from a user, and developing the Manitoba Fire-Watch API will increase awareness of fire safety for any citizen of Manitoba looking to spend some time in our great outdoors. 
+  
+Acting as a two-way road, the API delivers information based on user requests such as location, chance of a fire, the zone the location belongs to, current status of the fire, and the last recorded fire at the given location within Manitoba. This data can also be utilized by National Park Rangers to update their own data and information regarding the fires across our National Parks here in Manitoba, or even emergency services looking to get a quick status update on a blaze.  
   
 There are two requests you can make:   
 - ```firechance```: The current chance of a fire happening at the given location, and the type of zone that location is in.   
 - ```firestatus```: The status of a fire at a given location at the current time. This fire status request also gives the date of the last reported fire at the location.  
 
 ### Endpoints and Parameters:
+GET
 - /firechance/{location}
 
 - /firestatus/{location}/{currentTime}

@@ -56,3 +56,43 @@ Response:
 }
 
 
+/////////////swagger code//////////
+Request 1: firechance
+Response:
+{
+  {
+    "id": 1,
+    "name": "Birds Hill Wildfire",
+    "location": "Birds Hill Park,
+    "fire_chance": 0.10,
+    "fire_status": "active",
+    "is_on_fire": true
+  }
+}
+
+Request 2: firestatus
+Response:
+{
+  {
+    "id": 2,
+    "name": "Riding Mountain Wildfire",
+    "location": "Riding Mountain National Park",
+    "current_time": "10:20:00PM",
+    "fire_chance": 0.0,
+    "last_fire": "22/07/2022",
+    "fire_status": "contained",
+    "is_on_fire": false
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

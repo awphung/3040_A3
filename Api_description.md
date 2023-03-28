@@ -17,42 +17,39 @@ The endpoint gets the current chance of a fire at the given location.
 The endpoint gets the status of a fire at a given location at the current time.
 
 ### Parameter Types:
-Location: string
-currentTime: int
+Location: string  
+currentTime: timestamp in string format 
 
 ### API Resources:
 firechance:  
 {  
-&emsp; "location": "Birds Hill Park",  
-&emsp; "firechance": "0.10",  
-&emsp; "zone": "green"  
+&emsp; "location": "location",  
+&emsp; "firechance": "chance",  
+&emsp; "zone": "zone"  
 }  
   
-firestatus  
+firestatus:  
 {  
-&emsp; "location": "Riding Mountain National Park",  
-&emsp; "status": "no fire",  
-&emsp; "lastfire": "22-07-2022"  
+&emsp; "location": "location",  
+&emsp; "status": "status",  
+&emsp; "lastfire": "date"  
 }
 
-### Sample Request with Sample Response:
-Request 1: firechance
-Response:
-{
-  {
-    "location": "Birds Hill Park"
-  }
-  "status": "OK"
+### Sample Requests with Sample Responses:
+Request 1: /firechance/"Birds Hill Park"  
+Response:  
+{  
+&emsp;"location": "Birds Hill Park",  
+&emsp;"firechance": "0.12",  
+&emsp;"zone": "green"  
 }
 
-Request 2: firestatus
-Response:
-{
-  {
-    "location": "Riding Mountain National Park"
-    "currentTime": 10(in mins)
-  }
-  "status": "OK"
-}
+Request 2: /firestatus/"Riding Mountain National Park"/"28/03/2023 12:30:39"  
+Response:  
+{  
+&emsp;"location": "Riding Mountain National Park",  
+&emsp;"status": "no fire",  
+&emsp;"lastfire": "22-07-2022"  
+}  
 
 
